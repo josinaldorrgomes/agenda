@@ -25,30 +25,15 @@ public class Agenda {
 	private Agenda() {
 
 		Contato contato = null;
-
-		contato = new Contato();
-		contato.setNome("José");
-		contato.setTelefone("1111-1111");
+		contato = new Contato(null, "José", "1111-1111");
 		salvar(contato);
-
-		contato = new Contato();
-		contato.setNome("Maria");
-		contato.setTelefone("2222-2222");
+		contato = new Contato(null, "Maria", "2222-2222");
 		salvar(contato);
-
-		contato = new Contato();
-		contato.setNome("João");
-		contato.setTelefone("3333-3333");
+		contato = new Contato(null, "João", "3333-3333");
 		salvar(contato);
-
-		contato = new Contato();
-		contato.setNome("Luciana");
-		contato.setTelefone("4444-4444");
+		contato = new Contato(null, "Luciana", "4444-4444");
 		salvar(contato);
-
-		contato = new Contato();
-		contato.setNome("Alberto");
-		contato.setTelefone("5555-5555");
+		contato = new Contato(null, "Alberto", "5555-5555");
 		salvar(contato);
 
 	}

@@ -17,11 +17,9 @@ public class ListarServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
 		Agenda agenda = Agenda.getInstance();
 		Set<Contato> contatos = agenda.getContatos();
 		request.setAttribute("contatos", contatos);
 		request.getRequestDispatcher("/listar.jsp").forward(request, response);
-
 	}
 }

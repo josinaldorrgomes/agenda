@@ -15,12 +15,10 @@ public class ExcluirServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
 		Integer id = Integer.valueOf(request.getParameter("id"));
 		Agenda agenda = Agenda.getInstance();
 		agenda.excluir(id);
 		response.sendRedirect("/Agenda/Listar");
-
 	}
 
 }

@@ -1,7 +1,6 @@
 <%@ page import="br.com.agenda.model.Contato"%>
 <%@ page import="java.util.Set"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
@@ -21,10 +20,10 @@
 			</tr>
 			<tr>
 				<td>Telefone:</td>
-				<td><input type="text" name="nome" value="${contato.telefone}" /></td>			
+				<td><input type="text" name="telefone" value="${contato.telefone}" /></td>			
 			</tr>
 			<tr>
-				<td colspan="2"><input type="submit" value="Salvar" /></td>			
+				<td colspan="2" align="right"><input type="submit" value="Salvar" /></td>			
 			</tr>
 		</table>
 	</form>

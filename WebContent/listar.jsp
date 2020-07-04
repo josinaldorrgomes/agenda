@@ -12,19 +12,20 @@
 <body>
 	<c:url var="novoContatoUrl" value="/Editar" />
 	<a href="${novoContatoUrl}">Criar Contato</a>
+	<br>
+	<br>
 	<table width="100%" border="1">
 		<tr>
 			<td align="center"><strong>Nome</strong>
-			<td />
 			<td align="center"><strong>Telefone</strong>
-			<td />
+			<td align="center"><strong>Opções</strong>
 		</tr>
 		<c:choose>
 			<c:when test="${empty(contatos)}">
 				<td colspan="3" align="center">Nenhum contato cadastrado</td>
 			</c:when>
 			<c:otherwise>
-				<c:forEach var="c" items="${contatos}">
+				<c:forEach var="contato" items="${contatos}">
 					<tr>
 						<c:url var="editarContatoUrl" value="/Editar">
 							<c:param name="id">${contato.id}</c:param>
